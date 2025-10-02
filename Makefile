@@ -1,11 +1,6 @@
 all:
 	g++ main.cpp \
-	stack_destroy.cpp \
-	stack_dump.cpp \
-	stack_init.cpp \
-	stack_pop.cpp \
-	stack_push.cpp \
-	stack_verify.cpp \
+	stack.cpp \
 	-Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef \
     -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations \
     -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain \

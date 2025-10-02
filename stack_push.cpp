@@ -65,6 +65,7 @@ stack_err_t Stack_Push(stack_t *stack, int value)
     return STACK_OK;
 }
 
+
 void Stack_Fill(stack_t *stack)
 {
     int number = 0;

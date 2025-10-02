@@ -7,6 +7,7 @@
 #include "stack_dump.h"
 #include "stack_verify.h"
 
+
 stack_err_t Stack_Verify(stack_t *stack)
 {
     if (stack == NULL)

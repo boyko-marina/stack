@@ -5,14 +5,7 @@
 #include <assert.h>
 #include <ctype.h>
 
-#include "stack_destroy.h"
-#include "stack_dump.h"
-#include "stack_init.h"
-#include "stack_pop.h"
-#include "stack_print.h"
-#include "stack_push.h"
-#include "stack_verify.h"
-
+#include "stack.h"
 
 int main( )
 {
@@ -29,7 +22,7 @@ int main( )
     Stack_Print(&stack);
 
     int popped_num = 0;
-    for (size_t i = 0, i < 5; i++)
+    for (size_t i = 0; i < 5; i++)
     {
         if (Stack_Pop(&stack, &popped_num) != STACK_OK)
         {

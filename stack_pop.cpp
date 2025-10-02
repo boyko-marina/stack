@@ -6,6 +6,7 @@
 #include "stack_init.h"
 #include "stack_verify.h"
 
+
 bool Stack_Is_Empty(const stack_t *stack)
 {
     return stack->top == NULL_INDEX;

@@ -9,4 +9,5 @@ typedef struct stack {
 
 stack_err_t Stack_Init(stack_t *stack, size_t capacity);
 
+
 #endif

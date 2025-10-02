@@ -5,6 +5,7 @@
 #include "stack_dump.h"
 #include "stack_init.h"
 
+
 void Stack_Dump(stack_t *stack)
 {
     printf("--- STACK DUMP ---");

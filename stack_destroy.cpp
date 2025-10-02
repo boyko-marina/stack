@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 #include "stack_destroy.h"
-#include "stack_verify.h"
 #include "stack_init.h"
+#include "stack_verify.h"
 
 stack_err_t Stack_Destroy(stack_t *stack)
 {

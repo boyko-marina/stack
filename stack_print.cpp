@@ -5,6 +5,7 @@
 #include "stack_print.h"
 #include "stack_init.h"
 
+
 void Stack_Print(stack_t *stack)
 {
     printf("%d ", stack->data[0])

@@ -9,6 +9,7 @@ typedef enum{
     STACK_NOT_POP = 1,
 } stack_err_t;
 
+
 stack_err_t Stack_Verify(stack_t *stack);
 stack_err_t STACK_VERIFY(stack_t *stack);
 
