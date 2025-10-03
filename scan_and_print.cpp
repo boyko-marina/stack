@@ -85,3 +85,20 @@ char **point_array(char *text, int n, int k)
 
     return ptr_text;
 }
+
+void print_string(char *str)
+{
+    for (int i = 0; str[i] != '\n' && str[i] != '\0'; i++)
+    {
+        putchar(str[i]);
+    }
+    putchar('\n');
+}
+
+void print_text(char **ptr_text, int lines_num)
+{
+    for (int i = 0; i < lines_num; i++)
+    {
+        print_string(ptr_text[i]);
+    }
+}

@@ -16,17 +16,15 @@ int main( )
     FILE *fp = fopen("calc_stack.txt", "rb");
     if (fp == 0)
     {
-//        printf("Error while opening file.\n");
+        printf("Error while opening file.\n");
     }
 
     int file_size = size_of_file(fp);
     char *text = make_array(fp, file_size);
-
 //    printf("%d\n", file_size);
 
     int lines_num = num_of_lines(text, file_size);
     char **ptr_text = point_array(text, file_size, lines_num);
-
 //    printf("%d\n", lines_num);
 
     stack_t stack = {};
@@ -35,10 +33,9 @@ int main( )
     {
         printf("Error. Can not initialize stack.\n");
     }
-//    printf("init_ok\n");
 
     Stack_Calc(&stack, ptr_text, lines_num);
- //   printf("calc_ok\n");
+
     // Stack_Example();
     return 0;
 }

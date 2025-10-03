@@ -13,32 +13,9 @@
 #include "scan_data.h"
 #include "calc_stack.h"
 
-int str_len(const char *s)
-{
-    int i = 0;
-    while (s[i] != '\n')
-        {
-            i++;
-        }
-    return i;
-}
-
-// int Scan_Number(const char *str)
-// {
-//     while (*str)
-//     {
-//         if ((*str == '-' && isdigit(*(str+1))) || isdigit(*str))
-//         {
-//             return atoi(str);
-//         }
-//         str++;
-//     }
-//     return 0;
-// }
-
 void Stack_Calc(stack_t *stack, char **ptr_text, int lines_num)
 {
-    print_text(ptr_text, lines_num);
+    // print_text(ptr_text, lines_num);
     for (int i = 0; i < lines_num; i++)
     {
         printf("current cmd: ");
@@ -135,53 +112,3 @@ void Stack_Calc(stack_t *stack, char **ptr_text, int lines_num)
     }
 }
 
-// int compare_strings(const char *par1, const char *par2)
-// {
-//     int len_1 = strlen(par1);
-//     int len_11 = strlen(strchr(par1, ' '));
-// //    strncmp(line, "PUSH", 4)
-//     int len1 = len_1 - len_11;
-//     int len2 = strlen(par2);
-//     int i1 = 0;
-//     int i2 = 0;
-//
-//     for (; i1 < len1 && i2 < len2; i1++, i2++)
-//     {
-//         while (i1 < len1 && !isalpha(par1[i1])) i1++;
-//         while (i2 < len2 && !isalpha(par2[i2])) i2++;
-//
-//         char c1 = toupper(par1[i1]);
-//         char c2 = toupper(par2[i2]);
-//         // putchar(c1);
-//         // putchar(c2);
-//         // putchar('\n');
-//
-//         if (c1 > c2)
-//         {
-//             return 1;
-//         }
-//         if (c1 < c2)
-//         {
-//             return -1;
-//         }
-//     }
-// 
-//     return 0;
-// }
-
-void print_string(char *str)
-{
-    for (int i = 0; str[i] != '\n' && str[i] != '\0'; i++)
-    {
-        putchar(str[i]);
-    }
-    putchar('\n');
-}
-
-void print_text(char **ptr_text, int lines_num)
-{
-    for (int i = 0; i < lines_num; i++)
-    {
-        print_string(ptr_text[i]);
-    }
-}
